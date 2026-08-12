@@ -1,9 +1,10 @@
 # 👨‍💻 Vinícius Castro | Portfólio Pessoal
 
 ![Status](https://img.shields.io/badge/Status-Concluído-success)
-![Frontend](https://img.shields.io/badge/Frontend-HTML5_CSS3_JS-orange)
-![Tema](https://img.shields.io/badge/Tema-Dark_Mode-blue)
-![Responsivo](https://img.shields.io/badge/Layout-Responsivo-brightgreen)
+![Frontend](https://img.shields.io/badge/Frontend-React_Vite-blue)
+![Linguagem](https://img.shields.io/badge/Language-TypeScript-blueviolet)
+![Estilo](https://img.shields.io/badge/Styling-Tailwind_CSS-06b6d4)
+![Tema](https://img.shields.io/badge/Tema-Dark_Mode-orange)
 
 O **Portfólio Pessoal** é o site de apresentação de Vinícius Silva Castro, Desenvolvedor Back-End Java. O site reúne o perfil acadêmico, as habilidades, a experiência e os projetos desenvolvidos durante a faculdade, com visual moderno em tema escuro e foco em uma navegação simples e responsiva.
 
@@ -32,17 +33,13 @@ O site é organizado em seis seções, acessíveis por navegação fixa no topo 
 
 ## 🛠️ Tecnologias Utilizadas
 
-| Tecnologia | Uso no projeto |
-| :--- | :--- |
-| **HTML5** | Estrutura semântica das páginas e seções |
-| **CSS3** | Estilização, layout responsivo, animações e tema visual |
-| **JavaScript** | Menu mobile, rolagem suave e animações de scroll |
-| **SVG** | Criação do favicon personalizado ("VC.") |
-| **Google Fonts** | Fonte Inter (tipografia) |
+* **Frontend:** React 19 com componentes funcionais e Hooks.
+* **Linguagem:** TypeScript com checagem estática de tipos.
+* **Build:** Vite (desenvolvimento e build de produção).
+* **Estilização:** Tailwind CSS 4 com tema customizado (dark mode).
+* **Interações:** Animações de scroll via IntersectionObserver e menu mobile com estado do React.
 
----
-
-## 🎨 Identidade Visual
+### 🎨 Identidade Visual
 
 * 🌑 **Tema escuro:** fundo `#0d1117`, mantendo o padrão visual do projeto.
 * 💜 **Cor de destaque:** roxo/lilás (`#a855f7`) aplicada em links, botões, tags de habilidades, linha do tempo e elementos interativos.
@@ -55,12 +52,16 @@ O site é organizado em seis seções, acessíveis por navegação fixa no topo 
 
 ## 🚀 Como Executar
 
+### Desenvolvimento Local
 1. Clone o repositório: `git clone https://github.com/viniscastro/portfolio.git`
-2. Abra o arquivo `index.html` no navegador.
+2. Na raiz, instale as dependências: `npm install`
+3. Inicie o servidor de desenvolvimento: `npm run dev`
+4. Acesse a URL exibida no terminal (padrão `http://localhost:5173`).
 
-**Opcional** — iniciar um servidor local na pasta do projeto:
-1. Na raiz, execute: `python -m http.server`
-2. Acesse via `http://localhost:8000`.
+### Build de Produção
+1. Execute: `npm run build`
+2. Os arquivos otimizados serão gerados na pasta `dist/`.
+3. Para pré-visualizar o build: `npm run preview`.
 
 ---
 
@@ -68,10 +69,16 @@ O site é organizado em seis seções, acessíveis por navegação fixa no topo 
 
 ```
 portfolio/
-├── index.html     # Estrutura do site
-├── style.css      # Estilos, tema e responsividade
-├── script.js      # Interações (menu, scroll, animações)
-└── favicon.svg    # Ícone da aba do navegador
+├── index.html               # Ponto de entrada da aplicação
+├── vite.config.ts           # Configuração do Vite (React + Tailwind)
+├── src/
+│   ├── main.tsx             # Inicialização do React
+│   ├── App.tsx              # Composição das seções
+│   ├── index.css            # Tema, cores e utilitários Tailwind
+│   ├── data.ts              # Dados (habilidades, projetos, contatos)
+│   └── components/          # Componentes (Header, Hero, About, ...)
+└── public/
+    └── favicon.svg          # Ícone da aba do navegador
 ```
 
 ---

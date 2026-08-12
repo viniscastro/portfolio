@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0d1117;
+  --color-bg-alt: #161b22;
+  --color-card: #1c2430;
+  --color-line: #2d3542;
+  --color-fg: #e6edf3;
+  --color-muted: #9da7b3;
+  --color-accent: #a855f7;
+  --color-accent-dark: #7c3aed;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 68px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+.hero-bg {
+  background:
+    radial-gradient(ellipse at 80% 20%, rgba(168, 85, 247, 0.25), transparent 50%),
+    radial-gradient(ellipse at 10% 90%, rgba(168, 85, 247, 0.12), transparent 50%);
+}
+
+.btn {
+  @apply inline-block px-7 py-3 rounded-lg font-semibold text-sm no-underline transition-all duration-200 cursor-pointer;
+}
+
+.btn-primary {
+  @apply bg-accent text-white shadow-[0_4px_18px_rgba(168,85,247,0.25)] hover:bg-accent-dark hover:-translate-y-0.5;
+}
+
+.btn-outline {
+  @apply bg-transparent text-accent border border-accent hover:bg-accent/25 hover:-translate-y-0.5;
+}
+
+.btn-sm {
+  @apply px-5 py-2.5 text-[0.85rem];
+}
+
+.skill-tag {
+  @apply bg-accent/15 border border-accent/25 text-fg px-3.5 py-1.5 rounded-full text-sm font-medium transition-all duration-200 hover:bg-accent/25 hover:-translate-y-0.5;
+}
