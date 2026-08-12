@@ -1,7 +1,9 @@
+import { Container } from './Container'
+
 export function Hero() {
   return (
-    <section id="inicio" className="hero-bg flex min-h-screen items-center px-6 pb-16 pt-28">
-      <div className="container mx-auto max-w-[1080px] text-center">
+    <section id="inicio" className="hero-bg flex min-h-screen items-center pb-16 pt-28">
+      <Container className="text-center">
         <p className="mb-3 text-lg font-semibold text-accent">Olá, eu sou</p>
         <h1 className="mb-2 text-4xl font-extrabold leading-tight tracking-tight text-fg md:text-6xl">
           Vinícius Silva Castro
@@ -21,7 +23,7 @@ export function Hero() {
             Entrar em contato
           </a>
         </div>
-      </div>
+      </Container>
     </section>
   )
 }

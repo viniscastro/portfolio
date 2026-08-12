@@ -8,7 +8,7 @@ export function Projects() {
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
           <Reveal key={project.title} className="h-full">
-            <article className="flex h-full flex-col rounded-xl border border-line bg-card p-7 transition-all duration-200 hover:-translate-y-1 hover:border-accent">
+            <article className="card flex h-full flex-col p-7 transition-all duration-200 hover:-translate-y-1 hover:border-accent">
               <div className="mb-3 flex items-center justify-between gap-3">
                 <h3 className="font-bold text-fg">{project.title}</h3>
                 <span className="whitespace-nowrap rounded-full bg-accent/15 px-2.5 py-1 text-xs font-semibold text-accent">

@@ -16,7 +16,7 @@ export function Contact() {
               href={contact.href}
               target={contact.href.startsWith('http') ? '_blank' : undefined}
               rel="noopener noreferrer"
-              className="block h-full rounded-xl border border-line bg-card px-6 py-8 text-center text-fg no-underline transition-all duration-200 hover:-translate-y-1 hover:border-accent"
+              className="card block h-full px-6 py-8 text-center text-fg no-underline transition-all duration-200 hover:-translate-y-1 hover:border-accent"
             >
               <span className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-accent/15 text-xl font-extrabold text-accent">
                 {contact.icon}

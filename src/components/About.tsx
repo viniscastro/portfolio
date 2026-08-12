@@ -29,7 +29,7 @@ export function About() {
           </div>
         </Reveal>
         <Reveal>
-          <div className="flex flex-col gap-4 rounded-xl border border-line bg-card p-6">
+          <div className="card flex flex-col gap-4 p-6">
             {info.map((item) => (
               <div key={item.label} className="flex flex-col">
                 <span className="text-sm text-muted">{item.label}</span>

@@ -18,6 +18,11 @@ html {
   scroll-padding-top: 68px;
 }
 
+html,
+body {
+  overflow-x: clip;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -50,6 +55,10 @@ html {
 
 .btn-sm {
   @apply px-5 py-2.5 text-[0.85rem];
+}
+
+.card {
+  @apply rounded-xl border border-line bg-card;
 }
 
 .skill-tag {

@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
-const links = [
+const links: { href: string; label: string }[] = [
   { href: '#inicio', label: 'Início' },
   { href: '#sobre', label: 'Sobre' },
   { href: '#habilidades', label: 'Habilidades' },
@@ -11,6 +11,13 @@ const links = [
 
 export function Header() {
   const [open, setOpen] = useState(false)
+
+  useEffect(() => {
+    document.body.style.overflow = open ? 'hidden' : ''
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [open])
 
   return (
     <header className="fixed top-0 left-0 right-0 z-[100] border-b border-line bg-bg/85 backdrop-blur-md">
@@ -24,7 +31,7 @@ export function Header() {
         </a>
 
         <ul
-          className={`fixed top-[68px] right-0 flex flex-col gap-5 border-b border-l border-line bg-bg-alt px-8 py-6 transition-transform duration-300 md:static md:flex-row md:gap-7 md:border-0 md:bg-transparent md:p-0 md:translate-x-0 ${
+          className={`fixed top-[68px] right-0 flex max-h-[calc(100dvh-68px)] w-72 flex-col gap-5 overflow-y-auto border-b border-l border-line bg-bg-alt px-8 py-6 shadow-2xl transition-transform duration-300 md:static md:w-auto md:max-h-none md:flex-row md:gap-7 md:overflow-visible md:border-0 md:bg-transparent md:p-0 md:shadow-none md:translate-x-0 ${
             open ? 'translate-x-0' : 'translate-x-full'
           }`}
         >

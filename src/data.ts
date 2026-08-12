@@ -1,9 +1,45 @@
-export const skills = {
+export interface SkillGroups {
+  backend: string[]
+  frontend: string[]
+}
+
+export interface SkillGroup {
+  title: string
+  items: string[]
+}
+
+export interface TimelineItem {
+  title: string
+  meta: string
+  text: string
+}
+
+export interface Project {
+  title: string
+  badge: string
+  text: string
+  tech: string[]
+  url: string
+}
+
+export interface Contact {
+  icon: string
+  title: string
+  value: string
+  href: string
+}
+
+export const skills: SkillGroups = {
   backend: ['Java', 'Spring Boot', 'Python', 'FastAPI', 'PostgreSQL', 'SQLite'],
   frontend: ['HTML5', 'CSS3', 'JavaScript', 'Java Swing', 'Git', 'Docker'],
 }
 
-export const timeline = [
+export const skillGroups: SkillGroup[] = [
+  { title: 'Back-End & Dados', items: skills.backend },
+  { title: 'Front-End & Ferramentas', items: skills.frontend },
+]
+
+export const timeline: TimelineItem[] = [
   {
     title: 'Gerenciador de Barbearia',
     meta: 'Aplicação Desktop · Python + Tkinter',
@@ -21,7 +57,7 @@ export const timeline = [
   },
 ]
 
-export const projects = [
+export const projects: Project[] = [
   {
     title: 'Gerenciador de Barbearia',
     badge: 'Desktop',
@@ -45,7 +81,7 @@ export const projects = [
   },
 ]
 
-export const contacts = [
+export const contacts: Contact[] = [
   {
     icon: '✉',
     title: 'E-mail',
