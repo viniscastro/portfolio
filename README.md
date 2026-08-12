@@ -1,26 +1,70 @@
-# Relatório de Atividade — Protótipo de Site Portfólio Pessoal
+# 👨‍💻 Vinícius Castro | Portfólio Pessoal
 
-**Autor:** Vinícius Silva Castro
-**Curso:** Análise e Desenvolvimento de Sistemas — IFPE
-**Tipo de atividade:** Desenvolvimento de protótipo de site (front-end)
+![Status](https://img.shields.io/badge/Status-Concluído-success)
+![Frontend](https://img.shields.io/badge/Frontend-HTML5_CSS3_JS-orange)
+![Tema](https://img.shields.io/badge/Tema-Dark_Mode-blue)
+![Responsivo](https://img.shields.io/badge/Layout-Responsivo-brightgreen)
+
+O **Portfólio Pessoal** é o site de apresentação de Vinícius Silva Castro, Desenvolvedor Back-End Java. O site reúne o perfil acadêmico, as habilidades, a experiência e os projetos desenvolvidos durante a faculdade, com visual moderno em tema escuro e foco em uma navegação simples e responsiva.
 
 ---
 
-## 1. Objetivo
+## 🧩 Estrutura do Site
 
-Desenvolver um protótipo de site de portfólio pessoal para apresentar o perfil, as habilidades, a experiência e os projetos desenvolvidos pelo autor durante a faculdade, utilizando HTML5, CSS3 e JavaScript, com visual moderno em tema escuro.
+O site é organizado em seis seções, acessíveis por navegação fixa no topo (âncora):
 
-## 2. Tecnologias Utilizadas
+| Seção | Conteúdo |
+| :--- | :--- |
+| **Início (Hero)** | Apresentação com nome, área de atuação e botões de ação. |
+| **Sobre mim** | Bio baseada no perfil acadêmico e profissional. |
+| **Habilidades** | Tecnologias divididas em *Back-End & Dados* e *Front-End & Ferramentas*. |
+| **Experiência** | Linha do tempo com os projetos desenvolvidos na faculdade. |
+| **Projetos** | Cards com descrição, tecnologias e links para o GitHub. |
+| **Contato** | E-mail, WhatsApp e LinkedIn com links diretos. |
+
+### 🗂️ Projetos Exibidos
+
+* 💈 **Gerenciador de Barbearia** — Python + Tkinter — [github.com/viniscastro/Gerenciador-de-Barbearia](https://github.com/viniscastro/Gerenciador-de-Barbearia)
+* 💰 **Sistema de Gerenciamento Financeiro** — Java, Spring Boot, SQLite, Java Swing — [github.com/isjustjefferson/Projeto-LPOO](https://github.com/isjustjefferson/Projeto-LPOO)
+* 🌐 **Gerenciador de Barbearia Web** — HTML5, CSS3, JS, PgSQL, Python, FastAPI, Docker — [github.com/viniscastro/barber-manager](https://github.com/viniscastro/barber-manager)
+
+---
+
+## 🛠️ Tecnologias Utilizadas
 
 | Tecnologia | Uso no projeto |
-|---|---|
-| HTML5 | Estrutura semântica das páginas e seções |
-| CSS3 | Estilização, layout responsivo, animações e tema visual |
-| JavaScript | Menu mobile, rolagem suave e animações de scroll |
-| SVG | Criação do favicon personalizado ("VC.") |
-| Google Fonts | Fonte Inter (tipografia) |
+| :--- | :--- |
+| **HTML5** | Estrutura semântica das páginas e seções |
+| **CSS3** | Estilização, layout responsivo, animações e tema visual |
+| **JavaScript** | Menu mobile, rolagem suave e animações de scroll |
+| **SVG** | Criação do favicon personalizado ("VC.") |
+| **Google Fonts** | Fonte Inter (tipografia) |
 
-## 3. Estrutura de Arquivos
+---
+
+## 🎨 Identidade Visual
+
+* 🌑 **Tema escuro:** fundo `#0d1117`, mantendo o padrão visual do projeto.
+* 💜 **Cor de destaque:** roxo/lilás (`#a855f7`) aplicada em links, botões, tags de habilidades, linha do tempo e elementos interativos.
+* 🔤 **Tipografia:** Inter (weights 400 a 800).
+* ✨ **Efeitos:** animações de hover, sombra de destaque (glow) e revelação de seções ao rolar (scroll reveal).
+* 📱 **Responsividade:** layout adaptável para desktop e mobile, com menu hambúrguer em telas menores.
+* 🪄 **Favicon:** gerado em SVG com o logotipo "VC." (texto branco e ponto roxo sobre fundo escuro).
+
+---
+
+## 🚀 Como Executar
+
+1. Clone o repositório: `git clone https://github.com/viniscastro/portfolio.git`
+2. Abra o arquivo `index.html` no navegador.
+
+**Opcional** — iniciar um servidor local na pasta do projeto:
+1. Na raiz, execute: `python -m http.server`
+2. Acesse via `http://localhost:8000`.
+
+---
+
+## 📁 Estrutura de Arquivos
 
 ```
 portfolio/
@@ -30,55 +74,8 @@ portfolio/
 └── favicon.svg    # Ícone da aba do navegador
 ```
 
-## 4. Seções do Site
-
-O site foi organizado em seis seções, com navegação fixa no topo (âncora):
-
-1. **Início (Hero)** — Apresentação com nome, área de atuação (Desenvolvedor Back-End Java) e botões de ação.
-2. **Sobre mim** — Bio baseada no perfil acadêmico e profissional, com destaque para formação, foco, metodologia e localização.
-3. **Habilidades** — Organizadas em dois grupos: *Back-End & Dados* (Java, Spring Boot, Python, FastAPI, PostgreSQL, SQLite) e *Front-End & Ferramentas* (HTML5, CSS3, JavaScript, Java Swing, Git, Docker).
-4. **Experiência** — Linha do tempo com os projetos desenvolvidos na faculdade.
-5. **Projetos** — Cards com descrição, tecnologias e links para o GitHub de cada projeto.
-6. **Contato** — E-mail, WhatsApp e LinkedIn com links diretos.
-
-### Projetos incluídos
-
-- **Gerenciador de Barbearia** — Python + Tkinter — [github.com/viniscastro/Gerenciador-de-Barbearia](https://github.com/viniscastro/Gerenciador-de-Barbearia)
-- **Sistema de Gerenciamento Financeiro** — Java, Spring Boot, SQLite, Java Swing — [github.com/isjustjefferson/Projeto-LPOO](https://github.com/isjustjefferson/Projeto-LPOO)
-- **Gerenciador de Barbearia Web** — HTML5, CSS3, JS, PgSQL, Python, FastAPI, Docker — [github.com/viniscastro/barber-manager](https://github.com/viniscastro/barber-manager)
-
-## 5. Identidade Visual
-
-- **Tema:** escuro (`#0d1117`), mantendo o padrão já existente do projeto.
-- **Cor de destaque:** roxo/lilás (`#a855f7`), aplicada em links, botões, tags de habilidades, linha do tempo e elementos interativos.
-- **Tipografia:** Inter (weights 400 a 800).
-- **Efeitos:** animações de hover, sombra de destaque (glow) e revelação de seções ao rolar (scroll reveal).
-- **Responsividade:** layout adaptável para desktop e mobile, com menu hambúrguer em telas menores.
-- **Favicon:** gerado em SVG com o logotipo "VC." (texto branco e ponto roxo sobre fundo escuro), exibido na aba do navegador.
-
-## 6. Passos Realizados
-
-1. Levantamento de requisitos e conteúdo (perfil, habilidades, projetos e contatos) com o autor.
-2. Definição da estrutura do site e das seções.
-3. Desenvolvimento do HTML semântico.
-4. Criação do CSS com tema escuro e destaque em azul, posteriormente ajustado para roxo/lilás conforme solicitação.
-5. Implementação das interações em JavaScript.
-6. Geração do favicon em SVG e vinculação ao cabeçalho do HTML.
-7. Verificação dos arquivos e estrutura do projeto.
-
-## 7. Como Executar
-
-Basta abrir o arquivo `index.html` em um navegador, ou, opcionalmente, iniciar um servidor local na pasta do projeto:
-
-```
-python -m http.server
-```
-
-e acessar `http://localhost:8000`.
-
-## 8. Resultados e Considerações
-
-O protótipo atende ao objetivo de apresentar o perfil do autor de forma clara e profissional, com navegação simples, layout responsivo e identidade visual condizente com um desenvolvedor back-end. O projeto pode evoluir futuramente com a adição de foto, novos projetos, blog e integração com formulário de contato.
-
 ---
-*Relatório referente à atividade de criação do protótipo de site portfólio pessoal.*
+
+## 👨‍🎓 Autor
+
+* **Vinícius Silva Castro** — Estudante de Análise e Desenvolvimento de Sistemas (IFPE), Desenvolvedor Back-End Java — [LinkedIn](https://www.linkedin.com/in/viniscastro/) · [GitHub](https://github.com/viniscastro)
