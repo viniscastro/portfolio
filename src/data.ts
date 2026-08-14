@@ -30,8 +30,8 @@ export interface Contact {
 }
 
 export const skills: SkillGroups = {
-  backend: ['Java', 'Spring Boot', 'Python', 'FastAPI', 'PostgreSQL', 'SQLite'],
-  frontend: ['HTML5', 'CSS3', 'JavaScript', 'Java Swing', 'Git', 'Docker'],
+  backend: ['Java', 'Spring Boot', 'Python', 'FastAPI', 'PostgreSQL'],
+  frontend: ['HTML5', 'CSS3', 'JavaScript', 'Git', 'GitHub', 'Docker'],
 }
 
 export const skillGroups: SkillGroup[] = [
@@ -52,7 +52,7 @@ export const timeline: TimelineItem[] = [
   },
   {
     title: 'Gerenciador de Barbearia Web',
-    meta: 'Web · HTML5, CSS3, JS, PgSQL, Python, FastAPI, Docker',
+    meta: 'Web · HTML5, CSS3, JS, PostgreSQL, Python, FastAPI, Docker',
     text: 'Evolução do gerenciador com arquitetura web completa: front-end, API e banco de dados.',
   },
 ]
@@ -61,22 +61,22 @@ export const projects: Project[] = [
   {
     title: 'Gerenciador de Barbearia',
     badge: 'Desktop',
-    text: 'Aplicação desktop para gerenciamento de barbearia, desenvolvida apenas com Python e Tkinter.',
+    text: 'Aplicação desktop para gerenciamento de barbearia, com função de cadastro de clientes, agendamento de horário, escolha do corte.',
     tech: ['Python', 'Tkinter'],
     url: 'https://github.com/viniscastro/Gerenciador-de-Barbearia',
   },
   {
     title: 'Sistema de Gerenciamento Financeiro',
     badge: 'Desktop',
-    text: 'Sistema financeiro desktop com Java, Spring Boot, SQLite e interface em Java Swing.',
-    tech: ['Java', 'Spring Boot', 'SQLite', 'Swing'],
+    text: 'Sistema financeiro desktop para gestão de gastos, com entradas e saídas, definição de metas, gráfico para ter um panorama geral.',
+    tech: ['Java', 'Spring Boot', 'SQLite', 'Java Swing'],
     url: 'https://github.com/isjustjefferson/Projeto-LPOO',
   },
   {
     title: 'Gerenciador de Barbearia Web',
     badge: 'Web',
-    text: 'Gerenciador web completo com HTML5, CSS3, JS, PostgreSQL, Python, FastAPI e Docker.',
-    tech: ['HTML5', 'CSS3', 'JS', 'PgSQL', 'FastAPI', 'Docker'],
+    text: 'Gerenciador web para uma barbearia, com sistema de cadastro, agendamento de horário, escolha do corte, lembrete via WhatsApp, confirmação do horário.',
+    tech: ['HTML5', 'CSS3', 'JS', 'PostgreSQL', 'FastAPI', 'Docker'],
     url: 'https://github.com/viniscastro/barber-manager',
   },
 ]
