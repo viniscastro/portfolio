@@ -6,7 +6,7 @@
 ![Estilo](https://img.shields.io/badge/Styling-Tailwind_CSS-06b6d4)
 ![Tema](https://img.shields.io/badge/Tema-Dark_Mode-orange)
 
-O **Portfólio Pessoal** é o site de apresentação de Vinícius Silva Castro, Desenvolvedor Back-End Java. O site reúne o perfil acadêmico, as habilidades, a experiência e os projetos desenvolvidos durante a faculdade, com visual moderno em tema escuro e foco em uma navegação simples e responsiva.
+O **Portfólio Pessoal** é o site de apresentação de Vinícius Silva Castro, Desenvolvedor de Software. O site reúne o perfil acadêmico, as habilidades, a experiência e os projetos desenvolvidos durante a faculdade, com visual moderno em tema escuro e foco em uma navegação simples e responsiva.
 
 ---
 
@@ -18,16 +18,18 @@ O site é organizado em seis seções, acessíveis por navegação fixa no topo 
 | :--- | :--- |
 | **Início (Hero)** | Apresentação com nome, área de atuação e botões de ação. |
 | **Sobre mim** | Bio baseada no perfil acadêmico e profissional. |
-| **Habilidades** | Tecnologias divididas em *Back-End & Dados* e *Front-End & Ferramentas*. |
-| **Experiência** | Linha do tempo com os projetos desenvolvidos na faculdade. |
+| **Habilidades** | Linguagens, Front-End, Back-End & Dados, IA & Dados, Ferramentas & Ágil e competências pessoais. |
+| **Trajetória** | Linha do tempo com a evolução através dos projetos da graduação. |
 | **Projetos** | Cards com descrição, tecnologias e links para o GitHub. |
-| **Contato** | E-mail, WhatsApp e LinkedIn com links diretos. |
+| **Contato** | E-mail, WhatsApp, LinkedIn e GitHub com links diretos. |
 
 ### 🗂️ Projetos Exibidos
 
-* 💈 **Gerenciador de Barbearia** — Python + Tkinter — [github.com/viniscastro/Gerenciador-de-Barbearia](https://github.com/viniscastro/Gerenciador-de-Barbearia)
-* 💰 **Sistema de Gerenciamento Financeiro** — Java, Spring Boot, SQLite, Java Swing — [github.com/isjustjefferson/Projeto-LPOO](https://github.com/isjustjefferson/Projeto-LPOO)
-* 🌐 **Gerenciador de Barbearia Web** — HTML5, CSS3, JS, PgSQL, Python, FastAPI, Docker — [github.com/viniscastro/barber-manager](https://github.com/viniscastro/barber-manager)
+* 🎮 **GameFinder RAG** — Python, Ollama, ChromaDB, Gradio — [github.com/viniscastro/TEIA](https://github.com/viniscastro/TEIA)
+* 📊 **Gestor Financeiro** — TypeScript, Next.js, PostgreSQL, Prisma — [github.com/viniscastro/gestor-financeiro](https://github.com/viniscastro/gestor-financeiro)
+* 🌐 **Barber Manager** — Python, FastAPI, PostgreSQL, Docker, Nginx, AWS EC2 — [github.com/viniscastro/barber-manager](https://github.com/viniscastro/barber-manager)
+* 💰 **Sistema de Gerenciamento Financeiro** — Java, Swing, SQLite, JFreeChart — [github.com/isjustjefferson/Projeto-LPOO](https://github.com/isjustjefferson/Projeto-LPOO)
+* 💈 **Gerenciador de Barbearia** — Python, CustomTkinter, SQLite — [github.com/viniscastro/Gerenciador-de-Barbearia](https://github.com/viniscastro/Gerenciador-de-Barbearia)
 
 ---
 
@@ -85,4 +87,4 @@ portfolio/
 
 ## 👨‍🎓 Autor
 
-* **Vinícius Silva Castro** — Estudante de Análise e Desenvolvimento de Sistemas (IFPE), Desenvolvedor Back-End Java — [LinkedIn](https://www.linkedin.com/in/viniscastro/) · [GitHub](https://github.com/viniscastro)
+* **Vinícius Silva Castro** — Estudante de Análise e Desenvolvimento de Sistemas (IFPE), Desenvolvedor de Software — [LinkedIn](https://www.linkedin.com/in/viniscastro/) · [GitHub](https://github.com/viniscastro)

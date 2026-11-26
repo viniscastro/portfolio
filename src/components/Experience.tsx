@@ -4,7 +4,7 @@ import { timeline } from '../data'
 
 export function Experience() {
   return (
-    <Section id="experiencia" title="Experiência" subtitle="Projetos desenvolvidos durante a faculdade">
+    <Section id="experiencia" title="Trajetória" subtitle="Minha evolução através dos projetos da graduação">
       <div className="relative mx-auto max-w-[720px] pl-8">
         <div className="absolute top-1.5 bottom-1.5 left-2 w-0.5 bg-gradient-to-b from-accent to-accent-dark" />
         {timeline.map((item) => (

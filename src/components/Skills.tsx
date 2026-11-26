@@ -10,7 +10,7 @@ export function Skills() {
       subtitle="Tecnologias e ferramentas com as quais trabalho"
       alt
     >
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {skillGroups.map((group) => (
           <Reveal key={group.title} className="h-full">
             <div className="card h-full p-7">

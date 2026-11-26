@@ -9,11 +9,11 @@ export function Hero() {
           Vinícius Silva Castro
         </h1>
         <p className="mb-5 text-xl font-semibold text-muted md:text-3xl">
-          Desenvolvedor <span className="text-accent">Back-End Java</span>
+          Desenvolvedor de <span className="text-accent">Software</span>
         </p>
         <p className="mx-auto mb-8 max-w-[620px] text-base text-muted md:text-lg">
-          Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por criar soluções de
-          software com Java, Python e bancos de dados.
+          Estudante de Análise e Desenvolvimento de Sistemas no IFPE, transformando problemas do
+          dia a dia em soluções simples e úteis com Python, Java, TypeScript e React.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <a href="#projetos" className="btn btn-primary">

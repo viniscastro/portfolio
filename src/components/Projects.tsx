@@ -4,18 +4,30 @@ import { projects } from '../data'
 
 export function Projects() {
   return (
-    <Section id="projetos" title="Projetos" subtitle="Alguns trabalhos que desenvolvi" alt>
+    <Section id="projetos" title="Projetos" subtitle="Do primeiro período até projetos full stack e com IA" alt>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
           <Reveal key={project.title} className="h-full">
             <article className="card flex h-full flex-col p-7 transition-all duration-200 hover:-translate-y-1 hover:border-accent">
-              <div className="mb-3 flex items-center justify-between gap-3">
+              <div className="mb-1 flex items-start justify-between gap-3">
                 <h3 className="font-bold text-fg">{project.title}</h3>
                 <span className="whitespace-nowrap rounded-full bg-accent/15 px-2.5 py-1 text-xs font-semibold text-accent">
                   {project.badge}
                 </span>
               </div>
-              <p className="mb-4 flex-grow text-sm text-muted">{project.text}</p>
+              <p className="mb-3 text-xs font-medium text-accent">{project.context}</p>
+              <p className="mb-4 text-sm text-muted">{project.text}</p>
+              {project.highlights && (
+                <ul className="mb-4 space-y-1.5 text-sm text-muted">
+                  {project.highlights.map((item) => (
+                    <li key={item} className="flex gap-2">
+                      <span className="mt-[0.55em] h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              <div className="flex-grow" />
               <div className="mb-5 flex flex-wrap gap-2">
                 {project.tech.map((tech) => (
                   <span
